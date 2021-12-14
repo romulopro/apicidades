@@ -1,8 +1,9 @@
-package one.dio.cidades.api.citiesapi;
+package one.dio.countries.resources;
 
 
 import java.util.Optional;
-
+import one.dio.countries.entities.Country;
+import one.dio.countries.repositories.CountryRepository;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,9 +16,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
+
+
 @RestController
 @RequestMapping("/countries")
-public class CountryResources {
+public class CountryResource {
 
     @Autowired // construtor que recebe o parâmetro da variável abaixo
     private CountryRepository repository;
