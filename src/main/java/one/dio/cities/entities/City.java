@@ -32,9 +32,9 @@ public class City {
   private String geolocation;
 
   // 2nd
-//   @Type(type = "point")
-//   @Column(name = "lat_lon", updatable = false, insertable = false)
-//   private Point location;
+  @Type(type = "point")
+  @Column(name = "lat_lon", updatable = false, insertable = false)
+  private Point location;
 
   public City() {
   }
@@ -69,7 +69,7 @@ public class City {
     return geolocation;
   }
 
-//   public Point getLocation() {
-//     return location;
-//   }
+  public Point getLocation() {
+    return location;
+  }
 }
